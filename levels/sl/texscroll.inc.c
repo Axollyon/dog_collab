@@ -6,13 +6,13 @@ void scroll_sts_mat_sl_dl_Water_layer5() {
 	Gfx *mat = segmented_to_virtual(mat_sl_dl_Water_layer5);
 
 	if (--curInterval0 <= 0) {
-		shift_t_down(mat, 14, PACK_TILESIZE(0, 1));
+		shift_t_down(mat, 13, PACK_TILESIZE(0, 1));
 		curInterval0 = intervalTex0;
 	}
 
 	if (--curInterval1 <= 0) {
-		shift_s(mat, 22, PACK_TILESIZE(0, 1));
-		shift_t(mat, 22, PACK_TILESIZE(0, 1));
+		shift_s(mat, 21, PACK_TILESIZE(0, 1));
+		shift_t(mat, 21, PACK_TILESIZE(0, 1));
 		curInterval1 = intervalTex1;
 	}
 };

@@ -1263,8 +1263,7 @@ Gfx sl_backdrop_Backdrop_mesh_tri_0[] = {
 Gfx mat_sl_backdrop_Water_layer1[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL1, 0, TEXEL0, 0, TEXEL1, 0, TEXEL0, 0, SHADE, COMBINED, PRIMITIVE, COMBINED, 1, COMBINED, PRIMITIVE, COMBINED),
-	gsSPSetGeometryMode(G_FOG),
-	gsSPClearGeometryMode(G_CULL_BACK),
+	gsSPGeometryMode(G_CULL_BACK, G_FOG),
 	gsDPSetCycleType(G_CYC_2CYCLE),
 	gsDPSetRenderMode(G_RM_FOG_SHADE_A, G_RM_AA_ZB_XLU_SURF2),
 	gsSPTexture(65535, 65535, 0, 0, 1),
@@ -1291,8 +1290,7 @@ Gfx mat_sl_backdrop_Water_layer1[] = {
 
 Gfx mat_revert_sl_backdrop_Water_layer1[] = {
 	gsDPPipeSync(),
-	gsSPClearGeometryMode(G_FOG),
-	gsSPSetGeometryMode(G_CULL_BACK),
+	gsSPGeometryMode(G_FOG, G_CULL_BACK),
 	gsDPSetCycleType(G_CYC_1CYCLE),
 	gsDPSetRenderMode(G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2),
 	gsSPEndDisplayList(),
