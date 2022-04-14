@@ -16,3 +16,4 @@
 #include "levels/sl/leveldata.inc.c"
 
 #include "levels/sl/sl_backdrop/model.inc.c"
+#include "levels/sl/sl_backdrop_water/model.inc.c"

@@ -12,4 +12,6 @@ extern const LevelScript level_sl_entry[];
 
 #include "levels/sl/sl_backdrop/header.h"
 
+#include "levels/sl/sl_backdrop_water/header.h"
+
 #endif
