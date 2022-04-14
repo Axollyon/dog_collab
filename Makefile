@@ -517,6 +517,8 @@ EMULATOR = mupen64plus
 EMU_FLAGS =
 LOADER = loader64
 LOADER_FLAGS = -vwf
+AXO_LOADER = /mnt/d/SM64/Loader/Release/64drive_usb.exe
+AXO_LOADER_FLAGS = -l
 SHA1SUM = sha1sum
 PRINT = printf
 
@@ -568,6 +570,9 @@ test-pj64: $(ROM)
 
 load: $(ROM)
 	$(LOADER) $(LOADER_FLAGS) $<
+
+axo-load: $(ROM)
+	$(AXO_LOADER) $(AXO_LOADER_FLAGS) $<
 
 libultra: $(BUILD_DIR)/libultra.a
 
