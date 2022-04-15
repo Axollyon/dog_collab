@@ -116,28 +116,39 @@ Gfx *geo_backdrop_move(s32 callContext, struct GraphNode *node, UNUSED Mat4 *mtx
 }
 
 extern Vtx sl_backdrop_water_Backdrop_Water_mesh_vtx_0[263];
-extern Vtx sl_backdrop_Backdrop_mesh_vtx_0[257];
+extern Vtx sl_backdrop_Backdrop_mesh_vtx_0[264];
 extern ALIGNED16 Mat4 gMatStack[32];
 
+#define NEAR_CLIP 218.f
+#define FAR_CLIP 65535.f
+
 Gfx *geo_sl_backdrop_fog(s32 callContext, struct GraphNode *node, UNUSED Mat4 *mtx) {
-    if (callContext == GEO_CONTEXT_RENDER) {
-        int i;
-        f32 near = 218.f;
-        f32 far = 65535.f;
-        Vtx *waterVerts = segmented_to_virtual(sl_backdrop_water_Backdrop_Water_mesh_vtx_0);
-        Vtx *rockVerts = segmented_to_virtual(sl_backdrop_Backdrop_mesh_vtx_0);
+    int i;
+    Vtx *waterVerts = segmented_to_virtual(sl_backdrop_water_Backdrop_Water_mesh_vtx_0);
+    Vtx *rockVerts = segmented_to_virtual(sl_backdrop_Backdrop_mesh_vtx_0);
+    if (callContext == GEO_CONTEXT_CREATE) {
+        for (i = 0; i < 264; i++) {
+            if (i < 263 && sqr(waterVerts[i].v.ob[0]) + sqr(waterVerts[i].v.ob[2]) <= sqr(2500)) {
+                waterVerts[i].v.flag = 1;
+            }
+            if (sqr(rockVerts[i].v.ob[0]) + sqr(rockVerts[i].v.ob[2]) <= sqr(2500)) {
+                rockVerts[i].v.flag = 1;
+            }
+        }
+    }
+    else if (callContext == GEO_CONTEXT_RENDER) {
         f32 view0 = gMatStack[1][0][2] * 20;
         f32 view1 = gMatStack[1][1][2] * 20;
         f32 view2 = gMatStack[1][2][2] * 20;
         f32 view3 = gMatStack[1][3][2];
 
-        for (i = 0; i < 263; i++) {
-            if (sqr(waterVerts[i].v.ob[0]) + sqr(waterVerts[i].v.ob[2]) <= sqr(2500)) {
+        for (i = 0; i < 264; i++) {
+            if (i < 263 && waterVerts[i].v.flag == 1) {
                 f32 depth;
                 int fog;
                 f32 oz = waterVerts[i].v.ob[0] * view0 + waterVerts[i].v.ob[1] * view1 + waterVerts[i].v.ob[2] * view2 + view3;
                 if (oz < 0) {
-                    depth = (((2 * near * far) / -oz) - near - far) / (near - far);
+                    depth = ((2 * NEAR_CLIP * FAR_CLIP) / (NEAR_CLIP - FAR_CLIP) / -oz) - (NEAR_CLIP + FAR_CLIP) / (NEAR_CLIP - FAR_CLIP);
                     fog = (depth - 0.94f) * (0xFF / 0.06f);
                     if (fog < 0x00) fog = 0x00;
                     if (fog > 0xFF) fog = 0xFF;
@@ -147,12 +158,12 @@ Gfx *geo_sl_backdrop_fog(s32 callContext, struct GraphNode *node, UNUSED Mat4 *m
                     waterVerts[i].v.cn[3] = 0;
                 }
             }
-            if (i < 257 && sqr(rockVerts[i].v.ob[0]) + sqr(rockVerts[i].v.ob[2]) <= sqr(2500)) {
+            if (rockVerts[i].v.flag == 1) {
                 f32 depth;
                 int fog;
                 f32 oz = rockVerts[i].v.ob[0] * view0 + rockVerts[i].v.ob[1] * view1 + rockVerts[i].v.ob[2] * view2 + view3;
                 if (oz < 0) {
-                    depth = (((2 * near * far) / -oz) - near - far) / (near - far);
+                    depth = ((2 * NEAR_CLIP * FAR_CLIP) / (NEAR_CLIP - FAR_CLIP) / -oz) - (NEAR_CLIP + FAR_CLIP) / (NEAR_CLIP - FAR_CLIP);
                     fog = (depth - 0.94f) * (0xFF / 0.06f);
                     if (fog < 0x00) fog = 0x00;
                     if (fog > 0xFF) fog = 0xFF;
@@ -166,3 +177,6 @@ Gfx *geo_sl_backdrop_fog(s32 callContext, struct GraphNode *node, UNUSED Mat4 *m
     }
     return 0;
 }
+
+#undef NEAR_CLIP
+#undef FAR_CLIP
