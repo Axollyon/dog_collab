@@ -40,8 +40,13 @@ COURSE_ACTS(COURSE_DDD, " 9 DIRE, DIRE DOCKS",
        "THROUGH THE JET STREAM"        , "THE MANTA RAY'S REWARD"        , "COLLECT THE CAPS...")
 
 COURSE_ACTS(COURSE_SL, "10 UPTURNED DEEPS",
-       "THE ELDER'S REQUEST"            , "CHILL WITH THE BULLY"          , "IN THE DEEP FREEZE",
-       "WHIRL FROM THE FREEZING POND"  , "SHELL SHREDDIN' FOR RED COINS" , "INTO THE IGLOO")
+       "THE ELDER'S REQUEST", /* find elder's glasses (on a shell) */ \
+       "SCUBA GUY SCRAMBLE", /* find and defeat all 5 scuba guys */ \
+       "REELY TANGLED CATCH", /* follow fishing line that's wrapped around rocks and shit to retrieve the fish*/ \
+       "RED COIN PLACEHOLDER", /* idk yet */ \
+       "THE LONG LOST LIGHTHOUSE", /* platforming up inside of lighthouse */ \
+       "WHAT SHOULD REMAIN UNSEEN" /* cthulhu boss; second person camera, throw shells at camera to damage */
+)
 
 COURSE_ACTS(COURSE_WDW, "11 WET-DRY WORLD",
        "SHOCKING ARROW LIFTS!"         , "TOP O' THE TOWN"               , "SECRETS IN THE SHALLOWS & SKY",
