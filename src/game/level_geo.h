@@ -21,6 +21,7 @@ Gfx *geo_skybox_main(s32 callContext, struct GraphNode *node, UNUSED Mat4 *mtx);
 
 Gfx *geo_zbuffer_clear(s32 callContext, UNUSED struct GraphNode *node, UNUSED Mat4 *mtx);
 Gfx *geo_backdrop_move(s32 callContext, struct GraphNode *node, UNUSED Mat4 *mtx);
+Gfx *geo_clouds_move(s32 callContext, struct GraphNode *node, UNUSED Mat4 *mtx);
 Gfx *geo_sl_backdrop_fog(s32 callContext, struct GraphNode *node, UNUSED Mat4 *mtx);
 
 #endif // LEVEL_GEO_H

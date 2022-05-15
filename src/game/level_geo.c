@@ -115,6 +115,15 @@ Gfx *geo_backdrop_move(s32 callContext, struct GraphNode *node, UNUSED Mat4 *mtx
     return 0;
 }
 
+Gfx *geo_clouds_move(s32 callContext, struct GraphNode *node, UNUSED Mat4 *mtx) {
+    if (callContext == GEO_CONTEXT_RENDER) {
+        ((struct GraphNodeTranslation *) node->next)->translation[0] = gLakituState.pos[0];
+        ((struct GraphNodeTranslation *) node->next)->translation[1] = gLakituState.pos[1];
+        ((struct GraphNodeTranslation *) node->next)->translation[2] = gLakituState.pos[2];
+    }
+    return 0;
+}
+
 extern Vtx sl_backdrop_water_Backdrop_Water_mesh_vtx_0[263];
 extern Vtx sl_backdrop_Backdrop_mesh_vtx_0[264];
 extern ALIGNED16 Mat4 gMatStack[32];
