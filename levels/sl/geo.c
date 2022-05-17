@@ -14,3 +14,5 @@
 #include "levels/sl/header.h"
 
 #include "levels/sl/geo.inc.c"
+
+#include "levels/sl/lighthouse_broken_glass/geo.inc.c"

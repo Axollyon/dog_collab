@@ -7525,6 +7525,16 @@ const BehaviorScript bhvCephie[] = {
         CALL_NATIVE(bhv_cephie_loop),
     END_LOOP(),
 };
+
+const BehaviorScript bhvLighthouseBrokenGlass[] = {
+	BEGIN(OBJ_LIST_SURFACE),
+    LOAD_COLLISION_DATA(lighthouse_broken_glass_collision),
+    OR_LONG(oFlags, (OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    SET_FLOAT(oDrawingDistance, 20000),
+	BEGIN_LOOP(),
+        CALL_NATIVE(load_object_collision_model),
+	END_LOOP(),
+};
 // axo end
 
 const BehaviorScript bhvLightningButton[] = {

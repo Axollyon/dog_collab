@@ -607,8 +607,6 @@
 
 #define MODEL_DOG                         0xFF
 
-#define MODEL_CEPHIE                      0x100
-
 #define MODEL_REX                         0x1FF
 #define MODEL_GALOOMBA                    0x1FE
 #define MODEL_BLOOPER                     0x1FD
@@ -630,6 +628,10 @@
 
 
 
+// axo models
+#define MODEL_CEPHIE                      0x190
+#define MODEL_LIGHTHOUSE_BROKEN_GLASS     0x191
+// end axo models
 
 //comit models
 #define MODEL_BOUNCE_CLOUD                0x100

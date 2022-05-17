@@ -18,3 +18,5 @@
 #include "levels/sl/sl_backdrop/model.inc.c"
 #include "levels/sl/sl_backdrop_water/model.inc.c"
 #include "levels/sl/sl_clouds/model.inc.c"
+#include "levels/sl/lighthouse_broken_glass/model.inc.c"
+#include "levels/sl/lighthouse_broken_glass/collision.inc.c"

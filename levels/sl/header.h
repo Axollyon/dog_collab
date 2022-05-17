@@ -16,4 +16,8 @@ extern const LevelScript level_sl_entry[];
 
 #include "levels/sl/sl_clouds/header.h"
 
+#include "levels/sl/lighthouse_broken_glass/geo_header.h"
+
+#include "levels/sl/lighthouse_broken_glass/collision_header.h"
+
 #endif

@@ -656,6 +656,7 @@ extern const BehaviorScript bhvRainbowCloudSpawner[];
 
 // axo start
 extern const BehaviorScript bhvCephie[];
+extern const BehaviorScript bhvLighthouseBrokenGlass[];
 // axo end
 
 // thecozies bhvs start
