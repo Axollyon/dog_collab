@@ -1,4 +1,5 @@
-extern void scroll_sts_mat_sl_dl_Water_layer5();
+extern void scroll_sts_mat_sl_dl_Water_Down_layer5();
+extern void scroll_sts_mat_sl_dl_Water_Up_layer5();
 extern void scroll_sts_mat_sl_dl_Logs_layer1_area1();
 extern void scroll_sts_mat_sl_dl_Metal_White_layer1_area1();
 extern void scroll_sts_mat_sl_dl_Planks_layer1_area1();
