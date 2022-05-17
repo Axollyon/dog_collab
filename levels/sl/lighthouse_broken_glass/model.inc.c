@@ -1072,10 +1072,10 @@ Vtx lighthouse_broken_glass_Lighthouse_Broken_Glass_Inside_mesh_layer_2_vtx_cull
 };
 
 Vtx lighthouse_broken_glass_Lighthouse_Broken_Glass_Inside_mesh_layer_2_vtx_0[4] = {
-	{{{-59, 375, 150},0, {2032, 4080},{0x85, 0x0, 0xDF, 0xFF}}},
-	{{{26, 375, -167},0, {-16, 4080},{0x85, 0x0, 0xDF, 0xFF}}},
-	{{{26, 0, -167},0, {-16, -16},{0x85, 0x0, 0xDF, 0xFF}}},
-	{{{-59, 0, 150},0, {2032, -16},{0x85, 0x0, 0xDF, 0xFF}}},
+	{{{-59, 375, 150},0, {-16, -16},{0x85, 0x0, 0xDF, 0xFF}}},
+	{{{26, 375, -167},0, {2032, -16},{0x85, 0x0, 0xDF, 0xFF}}},
+	{{{26, 0, -167},0, {2032, 4080},{0x85, 0x0, 0xDF, 0xFF}}},
+	{{{-59, 0, 150},0, {-16, 4080},{0x85, 0x0, 0xDF, 0xFF}}},
 };
 
 Gfx lighthouse_broken_glass_Lighthouse_Broken_Glass_Inside_mesh_layer_2_tri_0[] = {
@@ -1120,10 +1120,10 @@ Vtx lighthouse_broken_glass_Lighthouse_Broken_Glass_Outside_mesh_layer_2_vtx_cul
 };
 
 Vtx lighthouse_broken_glass_Lighthouse_Broken_Glass_Outside_mesh_layer_2_vtx_0[4] = {
-	{{{-30, 375, 167},0, {2032, 4080},{0x7B, 0x0, 0x21, 0xFF}}},
-	{{{-30, 0, 167},0, {2032, -16},{0x7B, 0x0, 0x21, 0xFF}}},
-	{{{59, 0, -167},0, {-16, -16},{0x7B, 0x0, 0x21, 0xFF}}},
-	{{{59, 375, -167},0, {-16, 4080},{0x7B, 0x0, 0x21, 0xFF}}},
+	{{{-30, 375, 167},0, {-16, -16},{0x7B, 0x0, 0x21, 0xFF}}},
+	{{{-30, 0, 167},0, {-16, 4080},{0x7B, 0x0, 0x21, 0xFF}}},
+	{{{59, 0, -167},0, {2032, 4080},{0x7B, 0x0, 0x21, 0xFF}}},
+	{{{59, 375, -167},0, {2032, -16},{0x7B, 0x0, 0x21, 0xFF}}},
 };
 
 Gfx lighthouse_broken_glass_Lighthouse_Broken_Glass_Outside_mesh_layer_2_tri_0[] = {
@@ -1172,7 +1172,7 @@ Gfx mat_lighthouse_broken_glass_Lighthouse_Glass_Cracks_layer2[] = {
 	gsSPFogPosition(920, 1000),
 	gsSPGeometryMode(0, G_FOG),
 	gsDPSetCycleType(G_CYC_2CYCLE),
-	gsDPSetRenderMode(GBL_c1(G_BL_CLR_FOG, G_BL_A_SHADE, G_BL_CLR_BL, G_BL_1MA) | GBL_c2(G_BL_CLR_IN, G_BL_A_IN, G_BL_CLR_MEM, G_BL_A_MEM), AA_EN | Z_CMP | IM_RD | CVG_DST_WRAP | ZMODE_DEC | CVG_X_ALPHA | ALPHA_CVG_SEL),
+	gsDPSetRenderMode(GBL_c1(G_BL_CLR_FOG, G_BL_A_SHADE, G_BL_CLR_IN, G_BL_1MA) | GBL_c2(G_BL_CLR_IN, G_BL_A_IN, G_BL_CLR_MEM, G_BL_A_MEM), AA_EN | Z_CMP | IM_RD | CVG_DST_WRAP | ZMODE_DEC | CVG_X_ALPHA | ALPHA_CVG_SEL),
 	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPTileSync(),
 	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_16b, 1, lighthouse_broken_glass_lighthouseglasscracks_ia4),
