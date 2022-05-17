@@ -1661,17 +1661,12 @@ static s32 check_common_submerged_cancels(struct MarioState *m) {
                 return transition_submerged_to_airborne(m);
             }
         } else {
-            //! If you press B to throw the shell, there is a ~5 frame window
-            // where your held object is the shell, but you are not in the
-            // water shell swimming action. This allows you to hold the water
-            // shell on land (used for cloning in DDD).
-            if (m->action == ACT_WATER_SHELL_SWIMMING && m->heldObj != NULL) {
-                m->heldObj->oInteractStatus = INT_STATUS_STOP_RIDING;
-                m->heldObj = NULL;
-                stop_shell_music();
+            if (m->pos[1] < m->floorHeight + 100) {
+                return transition_submerged_to_walking(m);
             }
-
-            return transition_submerged_to_walking(m);
+            else {
+                return transition_submerged_to_airborne(m);
+            }
         }
     }
 

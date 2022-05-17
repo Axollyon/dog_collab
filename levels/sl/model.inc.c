@@ -16949,7 +16949,7 @@ Gfx mat_sl_dl_Lighthouse_Glass_layer5_area1[] = {
 	gsDPPipeSync(),
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 8, 0, 0, 0, G_TX_WRAP | G_TX_MIRROR, 6, 0, G_TX_WRAP | G_TX_MIRROR, 6, 0),
 	gsDPSetTileSize(0, 0, 0, 252, 252),
-	gsDPSetEnvColor(254, 230, 228, 255),
+	gsDPSetEnvColor(254, 231, 229, 255),
 	gsSPSetLights1(sl_dl_Lighthouse_Glass_layer5_area1_lights),
 	gsSPEndDisplayList(),
 };

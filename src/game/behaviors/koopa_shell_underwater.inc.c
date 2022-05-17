@@ -17,6 +17,7 @@ void set_koopa_shell_underwater_hitbox(void) {
     obj_set_hitbox(o, &sKoopaShellUnderwaterHitbox);
 }
 
+
 void koopa_shell_underwater_get_thrown(void) {
     cur_obj_become_tangible();
     cur_obj_enable_rendering();
@@ -24,16 +25,18 @@ void koopa_shell_underwater_get_thrown(void) {
     o->oHeldState = 0;
     o->oAction = 1;
     o->oForwardVel = 50.0f;
-    o->oVelY = 20.0f;
-    obj_set_angle(o, gMarioState->faceAngle[0], gMarioState->faceAngle[1], gMarioState->faceAngle[2]);
-    o->oVelX = o->oForwardVel * coss(gMarioState->faceAngle[0]) * sins(gMarioState->faceAngle[1]);
-    o->oVelY = o->oForwardVel * sins(gMarioState->faceAngle[0]);
-    o->oVelZ = o->oForwardVel * coss(gMarioState->faceAngle[0]) * coss(gMarioState->faceAngle[1]);
-
+    if ((gMarioState->action & ACT_GROUP_MASK) == ACT_GROUP_SUBMERGED) {
+        obj_set_angle(o, gMarioState->faceAngle[0], gMarioState->faceAngle[1], gMarioState->faceAngle[2]);
+        o->oVelX = o->oForwardVel * coss(gMarioState->faceAngle[0]) * sins(gMarioState->faceAngle[1]);
+        o->oVelY = o->oForwardVel * sins(gMarioState->faceAngle[0]);
+        o->oVelZ = o->oForwardVel * coss(gMarioState->faceAngle[0]) * coss(gMarioState->faceAngle[1]);
+    } else {
+        obj_set_angle(o, 0, gMarioState->faceAngle[1], 0);
+        o->oVelX = o->oForwardVel * sins(gMarioState->faceAngle[1]);
+        o->oVelY = 0;
+        o->oVelZ = o->oForwardVel * coss(gMarioState->faceAngle[1]);
+    }
     cur_obj_move_using_vel();
-
-    // o->oMoveAngleYaw = gMarioObject->header.gfx.angle[1];
-    // o->activeFlags &= ~ACTIVE_FLAG_DESTRUCTIVE_OBJ_DONT_DESTROY;
 }
 
 s32 koopa_shell_check_walls(void) {
