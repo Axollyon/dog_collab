@@ -784,7 +784,9 @@ UNUSED s32 debug_sequence_tracker(s16 debugInputSequence[]) {
 #include "behaviors/yoshi.inc.c"
 // #include "behaviors/motos.inc.c"
 
-#include "behaviors/cephie.inc.c"
+#include "behaviors/axo/cephie.inc.c"
+#include "behaviors/axo/lighthouse_broken_glass.inc.c"
+
 #include "behaviors/emu/mine.inc.c"
 
 #include "behaviors/DogInLobby.inc.c"

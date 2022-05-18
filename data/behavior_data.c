@@ -7532,7 +7532,7 @@ const BehaviorScript bhvLighthouseBrokenGlass[] = {
     OR_LONG(oFlags, (OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
     SET_FLOAT(oDrawingDistance, 30000),
 	BEGIN_LOOP(),
-        CALL_NATIVE(load_object_collision_model),
+        CALL_NATIVE(bhv_lighthouse_broken_glass_loop),
 	END_LOOP(),
 };
 // axo end

@@ -492,7 +492,6 @@ SECTIONS
    YAY0_SEG(bidw_skybox, 0x0A000000)
    YAY0_SEG(bits_skybox, 0x0A000000)
    YAY0_SEG(CUSTOM_comit_clouds_skybox, 0x0A000000)
-   YAY0_SEG(custom_axo_clouds_skybox, 0x0A000000)
 
    // Texture bins
    YAY0_SEG(fire,     0x09000000)
