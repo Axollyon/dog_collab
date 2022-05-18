@@ -1,0 +1,18 @@
+extern const GeoLayout lighthouse_bulb_geo[];
+extern Lights1 lighthouse_bulb_Lighthouse_Bulb_Top_layer4_lights;
+extern Lights1 lighthouse_bulb_Lighthouse_Bulb_Bottom_layer4_lights;
+extern u8 lighthouse_bulb_lighthousebulbtopcolor_rgba16[];
+extern u8 lighthouse_bulb_lighthousebulbtopvalue_ia4[];
+extern u8 lighthouse_bulb_lighthousebulbbottomcolor_rgba16[];
+extern u8 lighthouse_bulb_lighthousebulbbottomvalue_ia4[];
+extern Vtx lighthouse_bulb_Lighthouse_Bulb_mesh_layer_4_vtx_cull[8];
+extern Vtx lighthouse_bulb_Lighthouse_Bulb_mesh_layer_4_vtx_0[8];
+extern Gfx lighthouse_bulb_Lighthouse_Bulb_mesh_layer_4_tri_0[];
+extern Vtx lighthouse_bulb_Lighthouse_Bulb_mesh_layer_4_vtx_1[8];
+extern Gfx lighthouse_bulb_Lighthouse_Bulb_mesh_layer_4_tri_1[];
+extern Gfx mat_lighthouse_bulb_Lighthouse_Bulb_Top_layer4[];
+extern Gfx mat_revert_lighthouse_bulb_Lighthouse_Bulb_Top_layer4[];
+extern Gfx mat_lighthouse_bulb_Lighthouse_Bulb_Bottom_layer4[];
+extern Gfx mat_revert_lighthouse_bulb_Lighthouse_Bulb_Bottom_layer4[];
+extern Gfx lighthouse_bulb_Lighthouse_Bulb_mesh_layer_4[];
+extern Gfx lighthouse_bulb_material_revert_render_settings[];

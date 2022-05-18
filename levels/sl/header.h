@@ -20,4 +20,6 @@ extern const LevelScript level_sl_entry[];
 
 #include "levels/sl/lighthouse_broken_glass/collision_header.h"
 
+#include "levels/sl/lighthouse_bulb/geo_header.h"
+
 #endif

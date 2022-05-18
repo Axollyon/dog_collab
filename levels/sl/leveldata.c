@@ -20,3 +20,4 @@
 #include "levels/sl/sl_clouds/model.inc.c"
 #include "levels/sl/lighthouse_broken_glass/model.inc.c"
 #include "levels/sl/lighthouse_broken_glass/collision.inc.c"
+#include "levels/sl/lighthouse_bulb/model.inc.c"

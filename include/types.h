@@ -356,7 +356,7 @@ struct Object {
 
 struct ObjectHitbox {
     /*0x00*/ u32 interactType;
-    /*0x04*/ u8 downOffset;
+    /*0x04*/ s16 downOffset;
     /*0x05*/ s8 damageOrCoinValue;
     /*0x06*/ s8 health;
     /*0x07*/ s8 numLootCoins;

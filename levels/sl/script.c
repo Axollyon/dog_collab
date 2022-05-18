@@ -39,6 +39,7 @@ const LevelScript level_sl_entry[] = {
 	JUMP_LINK(script_func_global_8), 
 	JUMP_LINK(script_func_global_14), 
 	LOAD_MODEL_FROM_GEO(MODEL_LIGHTHOUSE_BROKEN_GLASS, lighthouse_broken_glass_geo), 
+	LOAD_MODEL_FROM_GEO(MODEL_LIGHTHOUSE_BULB, lighthouse_bulb_geo), 
 
 	/* Fast64 begin persistent block [level commands] */
 	/* Fast64 end persistent block [level commands] */
@@ -48,6 +49,7 @@ const LevelScript level_sl_entry[] = {
 		WARP_NODE(0xF0, LEVEL_SL, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF1, LEVEL_SL, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		OBJECT(MODEL_LIGHTHOUSE_BROKEN_GLASS, 21045, -7000, -12096, 0, 0, 0, 0x00000000, bhvLighthouseBrokenGlass),
+		OBJECT(MODEL_LIGHTHOUSE_BULB, 20438, -6250, -12262, 0, 0, 0, 0x00000000, bhvLighthouseBulb),
 		OBJECT(MODEL_SHELL_BUBBLE, 16822, -828, -9766, 0, 0, 0, 0x00000000, bhvBubbleShell),
 		OBJECT(MODEL_CEPHIE, 200, -2500, 3000, 0, -90, 0, 0x00000000, bhvCephie),
 		OBJECT(MODEL_NONE, 0, -2500, 3500, 0, -180, 0, 0x000A0000, bhvSpinAirborneWarp),
