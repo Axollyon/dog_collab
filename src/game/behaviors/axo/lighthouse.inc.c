@@ -27,3 +27,8 @@ void bhv_lighthouse_bulb_init(void) {
 void bhv_lighthouse_bulb_loop(void) {
     o->oIntangibleTimer = 0;
 }
+
+void bhv_lighthouse_chain_loop(void) {
+    bhv_pole_base_loop();
+    o->oFaceAngleYaw = atan2s(gLakituState.pos[2] - o->oPosZ, gLakituState.pos[0] - o->oPosX);
+}

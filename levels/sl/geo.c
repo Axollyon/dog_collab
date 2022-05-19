@@ -17,3 +17,4 @@
 
 #include "levels/sl/lighthouse_broken_glass/geo.inc.c"
 #include "levels/sl/lighthouse_bulb/geo.inc.c"
+#include "levels/sl/lighthouse_chain/geo.inc.c"

@@ -1,0 +1,11 @@
+extern const GeoLayout lighthouse_chain_geo[];
+extern Lights1 lighthouse_chain_Chain_layer4_lights;
+extern u8 lighthouse_chain_chaincolor_rgba16[];
+extern u8 lighthouse_chain_chainvalue_ia4[];
+extern Vtx lighthouse_chain_Lighthouse_Chain_mesh_layer_4_vtx_cull[8];
+extern Vtx lighthouse_chain_Lighthouse_Chain_mesh_layer_4_vtx_0[6];
+extern Gfx lighthouse_chain_Lighthouse_Chain_mesh_layer_4_tri_0[];
+extern Gfx mat_lighthouse_chain_Chain_layer4[];
+extern Gfx mat_revert_lighthouse_chain_Chain_layer4[];
+extern Gfx lighthouse_chain_Lighthouse_Chain_mesh_layer_4[];
+extern Gfx lighthouse_chain_material_revert_render_settings[];

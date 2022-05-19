@@ -665,6 +665,7 @@ Gfx *geo_switch_cephie_hold(s32 callContext, struct GraphNode *node, UNUSED Mat4
 void bhv_lighthouse_broken_glass_loop(void);
 void bhv_lighthouse_bulb_init(void);
 void bhv_lighthouse_bulb_loop(void);
+void bhv_lighthouse_chain_loop(void);
 // axo end
 
 // thecozies start

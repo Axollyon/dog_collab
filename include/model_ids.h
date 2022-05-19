@@ -632,6 +632,7 @@
 #define MODEL_CEPHIE                      0x190
 #define MODEL_LIGHTHOUSE_BROKEN_GLASS     0x191
 #define MODEL_LIGHTHOUSE_BULB             0x192
+#define MODEL_LIGHTHOUSE_CHAIN            0x193
 // end axo models
 
 //comit models

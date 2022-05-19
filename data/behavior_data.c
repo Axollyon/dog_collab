@@ -7531,6 +7531,7 @@ const BehaviorScript bhvLighthouseBrokenGlass[] = {
     LOAD_COLLISION_DATA(lighthouse_broken_glass_collision),
     OR_INT(oFlags, (OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
     SET_FLOAT(oDrawingDistance, 30000),
+    CALL_NATIVE(bhv_init_room),
 	BEGIN_LOOP(),
         CALL_NATIVE(bhv_lighthouse_broken_glass_loop),
 	END_LOOP(),
@@ -7540,10 +7541,23 @@ const BehaviorScript bhvLighthouseBulb[] = {
 	BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, (OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
     SET_FLOAT(oDrawingDistance, 30000),
+    CALL_NATIVE(bhv_init_room),
     CALL_NATIVE(bhv_lighthouse_bulb_init),
 	BEGIN_LOOP(),
         CALL_NATIVE(bhv_lighthouse_bulb_loop),
 	END_LOOP(),
+};
+
+const BehaviorScript bhvLighthouseChain[] = {
+    BEGIN(OBJ_LIST_POLELIKE),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    SET_INT(oInteractType, INTERACT_POLE),
+    SET_HITBOX(/*Radius*/ 80, /*Height*/ 660),
+    CALL_NATIVE(bhv_init_room),
+    SET_INT(oIntangibleTimer, 0),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_lighthouse_chain_loop),
+    END_LOOP(),
 };
 // axo end
 
