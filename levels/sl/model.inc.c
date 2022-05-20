@@ -94,6 +94,14 @@ Lights1 sl_dl_Uno_Side_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFE, 0xFE, 0xFE, 0x28, 0x28, 0x28);
 
+Lights1 sl_dl_Lighthouse_Metal_Flat_Very_Slippery_layer1_area2_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFE, 0xFE, 0xFE, 0x28, 0x28, 0x28);
+
+Lights1 sl_dl_Lighthouse_Metal_Floor_layer1_area2_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFE, 0xFE, 0xFE, 0x28, 0x28, 0x28);
+
 Gfx sl_dl_water1_i4_aligner[] = {gsSPEndDisplayList()};
 u8 sl_dl_water1_i4[] = {
 	0x33, 0x33, 0x33, 0x3f, 0xc3, 0x33, 0x33, 0xff, 
@@ -16924,6 +16932,202 @@ Gfx sl_dl_Table_Visual_mesh_layer_6_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
+Vtx sl_dl_Lighthouse_Inside_mesh_layer_1_vtx_cull[8] = {
+	{{{-948, -4188, 948},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
+	{{{-948, 0, 948},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
+	{{{-948, 0, -948},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
+	{{{-948, -4188, -948},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
+	{{{948, -4188, 948},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
+	{{{948, 0, 948},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
+	{{{948, 0, -948},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
+	{{{948, -4188, -948},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
+};
+
+Vtx sl_dl_Lighthouse_Inside_mesh_layer_1_vtx_0[42] = {
+	{{{821, 0, -474},0, {-3088, -2417},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{615, -4000, 0},0, {5104, -3088},{0xCC, 0xB3, 0xB3, 0xFF}}},
+	{{{948, 0, 0},0, {-3088, -3088},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{533, -4000, -307},0, {5104, -2417},{0xCC, 0xB3, 0xB3, 0xFF}}},
+	{{{474, 0, -821},0, {-3088, -1740},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{307, -4000, -533},0, {5104, -1740},{0xCC, 0xB3, 0xB3, 0xFF}}},
+	{{{0, 0, -948},0, {-3088, -1057},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{0, -4000, -615},0, {5104, -1057},{0xCC, 0xB3, 0xB3, 0xFF}}},
+	{{{-474, 0, -821},0, {-3088, -371},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{-307, -4000, -533},0, {5104, -371},{0xCC, 0xB3, 0xB3, 0xFF}}},
+	{{{-821, 0, -474},0, {-3088, 318},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{-533, -4000, -307},0, {5104, 318},{0xCC, 0xB3, 0xB3, 0xFF}}},
+	{{{-948, 0, 0},0, {-3088, 1008},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{-615, -4000, 0},0, {5104, 1008},{0xCC, 0xB3, 0xB3, 0xFF}}},
+	{{{-821, 0, 474},0, {-3088, 1698},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{-533, -4000, 307},0, {5104, 1698},{0xCC, 0xB3, 0xB3, 0xFF}}},
+	{{{-474, 0, 821},0, {-3088, 2387},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{-307, -4000, 533},0, {5104, 2387},{0xCC, 0xB3, 0xB3, 0xFF}}},
+	{{{0, 0, 948},0, {-3088, 3073},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{0, -4000, 615},0, {5104, 3073},{0xCC, 0xB3, 0xB3, 0xFF}}},
+	{{{474, 0, 821},0, {-3088, 3756},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{307, -4000, 533},0, {5104, 3756},{0xCC, 0xB3, 0xB3, 0xFF}}},
+	{{{821, 0, 474},0, {-3088, 4433},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{533, -4000, 307},0, {5104, 4433},{0xCC, 0xB3, 0xB3, 0xFF}}},
+	{{{948, 0, 0},0, {-3088, 5104},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{615, -4000, 0},0, {5104, 5104},{0xCC, 0xB3, 0xB3, 0xFF}}},
+	{{{116, -4000, -431},0, {-16, 2032},{0xD7, 0xD7, 0xD7, 0xFF}}},
+	{{{116, -4160, -431},0, {-16, 1323},{0x2B, 0x2B, 0x2B, 0xFF}}},
+	{{{115, -4160, -200},0, {1008, 1323},{0x2F, 0x2F, 0x2F, 0xFF}}},
+	{{{115, -4000, -200},0, {1008, 2032},{0xEB, 0xEB, 0xEB, 0xFF}}},
+	{{{-115, -4160, -200},0, {2032, 1323},{0x2F, 0x2F, 0x2F, 0xFF}}},
+	{{{-115, -4000, -200},0, {2032, 2032},{0xEB, 0xEB, 0xEB, 0xFF}}},
+	{{{-115, -4000, -200},0, {2032, 2032},{0xEB, 0xEB, 0xEB, 0xFF}}},
+	{{{-115, -4160, -200},0, {2032, 1323},{0x2F, 0x2F, 0x2F, 0xFF}}},
+	{{{-115, -4160, -431},0, {3056, 1323},{0x2B, 0x2B, 0x2B, 0xFF}}},
+	{{{-115, -4000, -431},0, {3056, 2032},{0xD7, 0xD7, 0xD7, 0xFF}}},
+	{{{116, -4160, -431},0, {4080, 1323},{0x2B, 0x2B, 0x2B, 0xFF}}},
+	{{{116, -4000, -431},0, {4080, 2032},{0xD7, 0xD7, 0xD7, 0xFF}}},
+	{{{115, -4160, -200},0, {2032, -16},{0x0, 0x0, 0x0, 0xFF}}},
+	{{{116, -4160, -431},0, {2030, -2380},{0x0, 0x0, 0x0, 0xFF}}},
+	{{{-115, -4160, -431},0, {4078, -2381},{0x0, 0x0, 0x0, 0xFF}}},
+	{{{-115, -4160, -200},0, {4079, -16},{0x0, 0x0, 0x0, 0xFF}}},
+};
+
+Gfx sl_dl_Lighthouse_Inside_mesh_layer_1_tri_0[] = {
+	gsSPVertex(sl_dl_Lighthouse_Inside_mesh_layer_1_vtx_0 + 0, 32, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
+	gsSP2Triangles(4, 3, 0, 0, 4, 5, 3, 0),
+	gsSP2Triangles(6, 5, 4, 0, 6, 7, 5, 0),
+	gsSP2Triangles(8, 7, 6, 0, 8, 9, 7, 0),
+	gsSP2Triangles(10, 9, 8, 0, 10, 11, 9, 0),
+	gsSP2Triangles(12, 11, 10, 0, 12, 13, 11, 0),
+	gsSP2Triangles(14, 13, 12, 0, 14, 15, 13, 0),
+	gsSP2Triangles(16, 15, 14, 0, 16, 17, 15, 0),
+	gsSP2Triangles(18, 17, 16, 0, 18, 19, 17, 0),
+	gsSP2Triangles(20, 19, 18, 0, 20, 21, 19, 0),
+	gsSP2Triangles(22, 21, 20, 0, 22, 23, 21, 0),
+	gsSP2Triangles(24, 23, 22, 0, 24, 25, 23, 0),
+	gsSP2Triangles(26, 27, 28, 0, 26, 28, 29, 0),
+	gsSP2Triangles(29, 28, 30, 0, 29, 30, 31, 0),
+	gsSPVertex(sl_dl_Lighthouse_Inside_mesh_layer_1_vtx_0 + 32, 10, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSP2Triangles(3, 2, 4, 0, 3, 4, 5, 0),
+	gsSP2Triangles(6, 7, 8, 0, 6, 8, 9, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx sl_dl_Lighthouse_Inside_mesh_layer_1_vtx_1[62] = {
+	{{{0, -4000, 0},0, {1008, 1008},{0xFF, 0xFF, 0xFF, 0xFF}}},
+	{{{0, -4000, 615},0, {-2680, -2680},{0xCB, 0xCB, 0xCB, 0xFF}}},
+	{{{307, -4000, 533},0, {-342, -4030},{0xCB, 0xCB, 0xCB, 0xFF}}},
+	{{{-307, -4000, 533},0, {-4030, -342},{0xCB, 0xCB, 0xCB, 0xFF}}},
+	{{{0, -4000, 615},0, {-2680, -2680},{0xCB, 0xCB, 0xCB, 0xFF}}},
+	{{{-533, -4000, 307},0, {-4030, 2358},{0xCB, 0xCB, 0xCB, 0xFF}}},
+	{{{-307, -4000, 533},0, {-4030, -342},{0xCB, 0xCB, 0xCB, 0xFF}}},
+	{{{116, -4000, -431},0, {4285, 2899},{0xD7, 0xD7, 0xD7, 0xFF}}},
+	{{{0, -4000, -615},0, {4696, 4696},{0xC8, 0xC8, 0xC8, 0xFF}}},
+	{{{-115, -4000, -431},0, {2900, 4284},{0xD7, 0xD7, 0xD7, 0xFF}}},
+	{{{307, -4000, 533},0, {-342, -4030},{0xCB, 0xCB, 0xCB, 0xFF}}},
+	{{{533, -4000, 307},0, {2358, -4030},{0xCB, 0xCB, 0xCB, 0xFF}}},
+	{{{-948, 0, 0},0, {-4678, 6694},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{0, 0, 0},0, {1008, 1008},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{-821, 0, 474},0, {-6760, 3089},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{0, 0, 0},0, {1008, 1008},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{474, 0, 821},0, {-1073, -6760},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{0, 0, 948},0, {-4678, -4678},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{-821, 0, -474},0, {-1073, 8776},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{0, 0, 0},0, {1008, 1008},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{-948, 0, 0},0, {-4678, 6694},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{948, 0, 0},0, {6694, -4678},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{821, 0, 474},0, {3089, -6760},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{-474, 0, -821},0, {3089, 8776},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{-821, 0, -474},0, {-1073, 8776},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{-474, 0, 821},0, {-6760, -1073},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{0, 0, 948},0, {-4678, -4678},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{-821, 0, 474},0, {-6760, 3089},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{0, 0, 0},0, {1008, 1008},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{-474, 0, 821},0, {-6760, -1073},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{474, 0, -821},0, {8776, 3089},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{821, 0, -474},0, {8776, -1073},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{0, 0, 0},0, {1008, 1008},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{821, 0, -474},0, {8776, -1073},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{948, 0, 0},0, {6694, -4678},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{474, 0, 821},0, {-1073, -6760},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{0, 0, 0},0, {1008, 1008},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{821, 0, 474},0, {3089, -6760},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{0, -4000, -615},0, {4696, 4696},{0xCA, 0xCA, 0xCA, 0xFF}}},
+	{{{249, -4000, -431},0, {5084, 2100},{0xD4, 0xD4, 0xD4, 0xFF}}},
+	{{{307, -4000, -533},0, {6046, 2358},{0xCA, 0xCA, 0xCA, 0xFF}}},
+	{{{0, -4000, 0},0, {1008, 1008},{0xFF, 0xFF, 0xFF, 0xFF}}},
+	{{{115, -4000, -200},0, {2900, 1515},{0xEB, 0xEB, 0xEB, 0xFF}}},
+	{{{116, -4000, -431},0, {4285, 2899},{0xD7, 0xD7, 0xD7, 0xFF}}},
+	{{{0, -4000, -615},0, {4696, 4696},{0xCA, 0xCA, 0xCA, 0xFF}}},
+	{{{-115, -4000, -200},0, {1515, 2899},{0xEB, 0xEB, 0xEB, 0xFF}}},
+	{{{-533, -4000, -307},0, {-342, 6046},{0xCC, 0xCC, 0xCC, 0xFF}}},
+	{{{-249, -4000, -431},0, {2100, 5084},{0xD4, 0xD4, 0xD4, 0xFF}}},
+	{{{-115, -4000, -431},0, {2900, 4284},{0xD7, 0xD7, 0xD7, 0xFF}}},
+	{{{0, -4000, -615},0, {4696, 4696},{0xCA, 0xCA, 0xCA, 0xFF}}},
+	{{{-307, -4000, -533},0, {2358, 6046},{0xCA, 0xCA, 0xCA, 0xFF}}},
+	{{{0, -4000, -615},0, {4696, 4696},{0xCA, 0xCA, 0xCA, 0xFF}}},
+	{{{533, -4000, -307},0, {6046, -342},{0xCA, 0xCA, 0xCA, 0xFF}}},
+	{{{-615, -4000, 0},0, {-2680, 4696},{0xCB, 0xCB, 0xCB, 0xFF}}},
+	{{{-533, -4000, 307},0, {-4030, 2358},{0xCB, 0xCB, 0xCB, 0xFF}}},
+	{{{-533, -4000, -307},0, {-342, 6046},{0xCB, 0xCB, 0xCB, 0xFF}}},
+	{{{615, -4000, 0},0, {4696, -2680},{0xCB, 0xCB, 0xCB, 0xFF}}},
+	{{{533, -4000, 307},0, {2358, -4030},{0xCB, 0xCB, 0xCB, 0xFF}}},
+	{{{533, -4000, -307},0, {6046, -342},{0xCB, 0xCB, 0xCB, 0xFF}}},
+	{{{0, 0, -948},0, {6694, 6694},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{474, 0, -821},0, {8776, 3089},{0x94, 0x98, 0xC8, 0xFF}}},
+	{{{-474, 0, -821},0, {3089, 8776},{0x94, 0x98, 0xC8, 0xFF}}},
+};
+
+Gfx sl_dl_Lighthouse_Inside_mesh_layer_1_tri_1[] = {
+	gsSPVertex(sl_dl_Lighthouse_Inside_mesh_layer_1_vtx_1 + 0, 32, 0),
+	gsSP2Triangles(0, 1, 2, 0, 3, 4, 0, 0),
+	gsSP2Triangles(5, 6, 0, 0, 7, 8, 9, 0),
+	gsSP2Triangles(10, 11, 0, 0, 12, 13, 14, 0),
+	gsSP2Triangles(15, 16, 17, 0, 18, 19, 20, 0),
+	gsSP2Triangles(21, 22, 15, 0, 23, 19, 24, 0),
+	gsSP2Triangles(25, 15, 26, 0, 27, 28, 29, 0),
+	gsSP1Triangle(15, 30, 31, 0),
+	gsSPVertex(sl_dl_Lighthouse_Inside_mesh_layer_1_vtx_1 + 32, 30, 0),
+	gsSP2Triangles(0, 1, 2, 0, 3, 4, 5, 0),
+	gsSP2Triangles(6, 7, 8, 0, 9, 8, 7, 0),
+	gsSP2Triangles(7, 10, 9, 0, 10, 7, 11, 0),
+	gsSP2Triangles(7, 12, 11, 0, 13, 9, 10, 0),
+	gsSP2Triangles(14, 9, 13, 0, 14, 13, 15, 0),
+	gsSP2Triangles(15, 13, 16, 0, 16, 17, 15, 0),
+	gsSP2Triangles(15, 18, 14, 0, 15, 19, 18, 0),
+	gsSP2Triangles(9, 20, 8, 0, 21, 22, 9, 0),
+	gsSP2Triangles(23, 21, 9, 0, 24, 9, 25, 0),
+	gsSP2Triangles(9, 24, 26, 0, 4, 27, 28, 0),
+	gsSP1Triangle(27, 4, 29, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx sl_dl_Lighthouse_Inside_mesh_layer_1_vtx_2[16] = {
+	{{{145, -4005, -460},0, {-80, 1008},{0x5A, 0x0, 0xA6, 0xFF}}},
+	{{{144, -4005, -171},0, {560, 1008},{0x5A, 0x0, 0x5A, 0xFF}}},
+	{{{144, -4188, -171},0, {560, 591},{0x5A, 0x0, 0x5A, 0xFF}}},
+	{{{145, -4188, -460},0, {-80, 591},{0x5A, 0x0, 0xA6, 0xFF}}},
+	{{{-144, -4005, -171},0, {944, 1008},{0xA6, 0x0, 0x5A, 0xFF}}},
+	{{{-144, -4005, -460},0, {1584, 1008},{0xA6, 0x0, 0xA6, 0xFF}}},
+	{{{-144, -4188, -460},0, {1584, 591},{0xA6, 0x0, 0xA6, 0xFF}}},
+	{{{-144, -4188, -171},0, {944, 591},{0xA6, 0x0, 0x5A, 0xFF}}},
+	{{{144, -4005, -171},0, {432, 1008},{0x5A, 0x0, 0x5A, 0xFF}}},
+	{{{-144, -4005, -171},0, {1072, 1008},{0xA6, 0x0, 0x5A, 0xFF}}},
+	{{{-144, -4188, -171},0, {1072, 591},{0xA6, 0x0, 0x5A, 0xFF}}},
+	{{{144, -4188, -171},0, {432, 591},{0x5A, 0x0, 0x5A, 0xFF}}},
+	{{{-144, -4005, -460},0, {1456, 1008},{0xA6, 0x0, 0xA6, 0xFF}}},
+	{{{145, -4005, -460},0, {2096, 1008},{0x5A, 0x0, 0xA6, 0xFF}}},
+	{{{145, -4188, -460},0, {2096, 591},{0x5A, 0x0, 0xA6, 0xFF}}},
+	{{{-144, -4188, -460},0, {1456, 591},{0xA6, 0x0, 0xA6, 0xFF}}},
+};
+
+Gfx sl_dl_Lighthouse_Inside_mesh_layer_1_tri_2[] = {
+	gsSPVertex(sl_dl_Lighthouse_Inside_mesh_layer_1_vtx_2 + 0, 16, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
+	gsSP2Triangles(8, 9, 10, 0, 8, 10, 11, 0),
+	gsSP2Triangles(12, 13, 14, 0, 12, 14, 15, 0),
+	gsSPEndDisplayList(),
+};
+
 Gfx mat_sl_dl_Water_Down_layer5[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL1, 0, TEXEL0, 0, TEXEL1, 0, TEXEL0, 0, SHADE, COMBINED, PRIMITIVE, COMBINED, 1, COMBINED, PRIMITIVE, COMBINED),
@@ -17425,7 +17629,7 @@ Gfx mat_revert_sl_dl_Window_layer4_area1[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_sl_dl_Black_001_layer1_area1[] = {
+Gfx mat_sl_dl_Black_layer1_area1[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1),
 	gsDPSetFogColor(86, 86, 86, 255),
@@ -17437,7 +17641,7 @@ Gfx mat_sl_dl_Black_001_layer1_area1[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_sl_dl_Black_001_layer1_area1[] = {
+Gfx mat_revert_sl_dl_Black_layer1_area1[] = {
 	gsDPPipeSync(),
 	gsSPGeometryMode(G_FOG, 0),
 	gsDPSetCycleType(G_CYC_1CYCLE),
@@ -17924,6 +18128,73 @@ Gfx mat_revert_sl_dl_Uno_Blue_8[] = {
 	gsSPEndDisplayList(),
 };
 
+Gfx mat_sl_dl_Lighthouse_Metal_Flat_Very_Slippery_layer1_area2[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1, COMBINED, 0, SHADE, 0, 0, 0, 0, 1),
+	gsDPSetFogColor(0, 0, 0, 255),
+	gsSPFogPosition(900, 980),
+	gsSPGeometryMode(G_LIGHTING, G_FOG),
+	gsDPSetCycleType(G_CYC_2CYCLE),
+	gsDPSetRenderMode(G_RM_FOG_SHADE_A, G_RM_AA_ZB_OPA_SURF2),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPTileSync(),
+	gsDPSetTextureImage(G_IM_FMT_I, G_IM_SIZ_8b_LOAD_BLOCK, 1, sl_dl_lighthousemetalflat_i8),
+	gsDPSetTile(G_IM_FMT_I, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0),
+	gsDPLoadSync(),
+	gsDPLoadBlock(7, 0, 0, 2047, 256),
+	gsDPPipeSync(),
+	gsDPSetTile(G_IM_FMT_I, G_IM_SIZ_8b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0),
+	gsDPSetTileSize(0, 0, 0, 252, 252),
+	gsDPSetEnvColor(254, 187, 188, 255),
+	gsSPSetLights1(sl_dl_Lighthouse_Metal_Flat_Very_Slippery_layer1_area2_lights),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_revert_sl_dl_Lighthouse_Metal_Flat_Very_Slippery_layer1_area2[] = {
+	gsDPPipeSync(),
+	gsSPGeometryMode(G_FOG, G_LIGHTING),
+	gsDPSetCycleType(G_CYC_1CYCLE),
+	gsDPSetRenderMode(G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_sl_dl_Lighthouse_Metal_Floor_layer1_area2[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(TEXEL0, 0, ENVIRONMENT, 0, 0, 0, 0, 1, COMBINED, 0, SHADE, 0, 0, 0, 0, 1),
+	gsDPSetFogColor(0, 0, 0, 255),
+	gsSPFogPosition(900, 980),
+	gsSPGeometryMode(G_LIGHTING, G_FOG),
+	gsDPSetCycleType(G_CYC_2CYCLE),
+	gsDPSetRenderMode(G_RM_FOG_SHADE_A, G_RM_AA_ZB_OPA_SURF2),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPTileSync(),
+	gsDPSetTextureImage(G_IM_FMT_I, G_IM_SIZ_8b_LOAD_BLOCK, 1, sl_dl_lighthousemetalfloor_i8),
+	gsDPSetTile(G_IM_FMT_I, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0),
+	gsDPLoadSync(),
+	gsDPLoadBlock(7, 0, 0, 2047, 256),
+	gsDPPipeSync(),
+	gsDPSetTile(G_IM_FMT_I, G_IM_SIZ_8b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0),
+	gsDPSetTileSize(0, 0, 0, 252, 252),
+	gsDPSetEnvColor(254, 187, 188, 255),
+	gsSPSetLights1(sl_dl_Lighthouse_Metal_Floor_layer1_area2_lights),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_revert_sl_dl_Lighthouse_Metal_Floor_layer1_area2[] = {
+	gsDPPipeSync(),
+	gsSPGeometryMode(G_FOG, G_LIGHTING),
+	gsDPSetCycleType(G_CYC_1CYCLE),
+	gsDPSetRenderMode(G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_sl_dl_Black_Fogless[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsSPEndDisplayList(),
+};
+
 Gfx sl_dl_1_Water_Bottom_Visual_Down_mesh_layer_5[] = {
 	gsSPClearGeometryMode(G_LIGHTING),
 	gsSPVertex(sl_dl_1_Water_Bottom_Visual_Down_mesh_layer_5_vtx_cull + 0, 8, 0),
@@ -18049,9 +18320,9 @@ Gfx sl_dl_House_1_Outdoors_Visual_mesh_layer_1[] = {
 	gsSPDisplayList(mat_sl_dl_Metal_Black_layer1_area1),
 	gsSPDisplayList(sl_dl_House_1_Outdoors_Visual_mesh_layer_1_tri_3),
 	gsSPDisplayList(mat_revert_sl_dl_Metal_Black_layer1_area1),
-	gsSPDisplayList(mat_sl_dl_Black_001_layer1_area1),
+	gsSPDisplayList(mat_sl_dl_Black_layer1_area1),
 	gsSPDisplayList(sl_dl_House_1_Outdoors_Visual_mesh_layer_1_tri_4),
-	gsSPDisplayList(mat_revert_sl_dl_Black_001_layer1_area1),
+	gsSPDisplayList(mat_revert_sl_dl_Black_layer1_area1),
 	gsSPEndDisplayList(),
 };
 
@@ -18429,6 +18700,22 @@ Gfx sl_dl_Table_Visual_mesh_layer_6[] = {
 	gsSPCullDisplayList(0, 7),
 	gsSPDisplayList(mat_sl_dl_Big_Shadow),
 	gsSPDisplayList(sl_dl_Table_Visual_mesh_layer_6_tri_0),
+	gsSPEndDisplayList(),
+};
+
+Gfx sl_dl_Lighthouse_Inside_mesh_layer_1[] = {
+	gsSPClearGeometryMode(G_LIGHTING),
+	gsSPVertex(sl_dl_Lighthouse_Inside_mesh_layer_1_vtx_cull + 0, 8, 0),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPCullDisplayList(0, 7),
+	gsSPDisplayList(mat_sl_dl_Lighthouse_Metal_Flat_Very_Slippery_layer1_area2),
+	gsSPDisplayList(sl_dl_Lighthouse_Inside_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_sl_dl_Lighthouse_Metal_Flat_Very_Slippery_layer1_area2),
+	gsSPDisplayList(mat_sl_dl_Lighthouse_Metal_Floor_layer1_area2),
+	gsSPDisplayList(sl_dl_Lighthouse_Inside_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_sl_dl_Lighthouse_Metal_Floor_layer1_area2),
+	gsSPDisplayList(mat_sl_dl_Black_Fogless),
+	gsSPDisplayList(sl_dl_Lighthouse_Inside_mesh_layer_1_tri_2),
 	gsSPEndDisplayList(),
 };
 

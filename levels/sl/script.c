@@ -51,6 +51,7 @@ const LevelScript level_sl_entry[] = {
 		WARP_NODE(0xF1, LEVEL_SL, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0x00, LEVEL_SL, 0x01, 0x01, WARP_NO_CHECKPOINT),
 		WARP_NODE(0x01, LEVEL_BOB, 0x01, 0x00, WARP_NO_CHECKPOINT),
+		WARP_NODE(0x02, LEVEL_SL, 0x02, 0x0A, WARP_NO_CHECKPOINT),
 		OBJECT(MODEL_SHELL_BUBBLE, 16822, -828, -9766, 0, 0, 0, 0x00000000, bhvBubbleShell),
 		OBJECT(MODEL_CEPHIE, 200, -2500, 3000, 0, -90, 0, 0x00000000, bhvCephie),
 		OBJECT(MODEL_LIGHTHOUSE_BROKEN_GLASS, 21045, -7000, -12096, 0, 0, 0, 0x00000000, bhvLighthouseBrokenGlass),
@@ -63,6 +64,7 @@ const LevelScript level_sl_entry[] = {
 		OBJECT(MODEL_NONE, 20437, -947, -9230, 0, 0, 0, (1 << 16), bhvFadingWarp),
 		OBJECT(MODEL_NONE, 0, -2500, 3500, 0, -180, 0, 0x000A0000, bhvSpinAirborneWarp),
 		MARIO_POS(0x01, -180, 0, -2500, 3500),
+		OBJECT(MODEL_NONE, 20437, -6170, -12578, 0, -180, 0, (2 << 16), bhvWarp),
 		OBJECT(MODEL_CEPHIE, 1500, -2450, 2000, 0, 0, 0, 0x00020000, bhvCephie),
 		OBJECT(MODEL_CEPHIE, 1500, -2450, 2400, 0, -180, 0, 0x00010000, bhvCephie),
 		OBJECT(MODEL_CEPHIE, 1285, -2450, 2977, 0, -112, 0, 0x00030000, bhvCephie),
@@ -70,6 +72,19 @@ const LevelScript level_sl_entry[] = {
 		ROOMS(sl_area_1_collision_rooms),
 		MACRO_OBJECTS(sl_area_1_macro_objs),
 		SET_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_WATER),
+		TERRAIN_TYPE(TERRAIN_GRASS),
+		/* Fast64 begin persistent block [area commands] */
+		/* Fast64 end persistent block [area commands] */
+	END_AREA(),
+
+	AREA(2, sl_area_2),
+		WARP_NODE(0x0A, LEVEL_SL, 0x01, 0x02, WARP_NO_CHECKPOINT),
+		WARP_NODE(0xF0, LEVEL_SL, 0x01, 0x0A, WARP_NO_CHECKPOINT),
+		WARP_NODE(0xF1, LEVEL_SL, 0x01, 0x0A, WARP_NO_CHECKPOINT),
+		OBJECT(MODEL_NONE, 20438, -6160, -12578, 0, 0, 0, (0xA << 16), bhvWarp),
+		TERRAIN(sl_area_2_collision),
+		MACRO_OBJECTS(sl_area_2_macro_objs),
+		STOP_MUSIC(0),
 		TERRAIN_TYPE(TERRAIN_GRASS),
 		/* Fast64 begin persistent block [area commands] */
 		/* Fast64 end persistent block [area commands] */

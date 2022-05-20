@@ -14,7 +14,7 @@ const GeoLayout sl_area_1_geo[] = {
 		GEO_OPEN_NODE(),
 			GEO_DISPLAY_LIST(LAYER_TRANSPARENT, sl_dl_Lighthouse_mesh_layer_5),
 		GEO_CLOSE_NODE(),
-		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 20438, 2267, -12262, sl_dl_Lighthouse_Foundation_mesh_layer_1),
+		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 20437, 2267, -12262, sl_dl_Lighthouse_Foundation_mesh_layer_1),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 0, 4000, 0, sl_dl_Terrain_mesh_layer_1),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_TRANSPARENT, 0, -1500, 0, sl_dl_Z_Water_Bottom_Visual_Up_mesh_layer_5),
 	GEO_CLOSE_NODE(),
