@@ -1450,8 +1450,14 @@ s32 act_teleport_fade_out(struct MarioState *m) {
 }
 
 s32 act_teleport_fade_in(struct MarioState *m) {
+    u8 underwater = m->pos[1] < m->waterLevel - 100;
     play_sound_if_no_flag(m, SOUND_ACTION_TELEPORT, MARIO_ACTION_SOUND_PLAYED);
-    set_mario_animation(m, MARIO_ANIM_FIRST_PERSON);
+    if (underwater) {
+        set_mario_animation(m, MARIO_ANIM_WATER_IDLE);
+    }
+    else {
+        set_mario_animation(m, MARIO_ANIM_FIRST_PERSON);
+    }
 
 #if ENABLE_RUMBLE
     if (m->actionTimer == 0) {
@@ -1468,7 +1474,7 @@ s32 act_teleport_fade_in(struct MarioState *m) {
     }
 
     if (m->actionTimer++ == 32) {
-        if (m->pos[1] < m->waterLevel - 100) {
+        if (underwater) {
             // Check if the camera is not underwater.
             if (m->area->camera->mode != WATER_SURFACE_CAMERA_MODE) {
                 set_camera_mode(m->area->camera, WATER_SURFACE_CAMERA_MODE, 1);
@@ -1479,7 +1485,13 @@ s32 act_teleport_fade_in(struct MarioState *m) {
         }
     }
 
-    stop_and_set_height_to_floor(m);
+    if (underwater) {
+        mario_set_forward_vel(m, 0.0f);
+        m->vel[1] = 0.0f;
+    }
+    else {
+        stop_and_set_height_to_floor(m);
+    }
 
     return FALSE;
 }
