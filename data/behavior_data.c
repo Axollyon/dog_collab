@@ -7552,7 +7552,7 @@ const BehaviorScript bhvLighthouseChain[] = {
     BEGIN(OBJ_LIST_POLELIKE),
     OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
     SET_INT(oInteractType, INTERACT_POLE),
-    SET_HITBOX(/*Radius*/ 80, /*Height*/ 660),
+    SET_HITBOX(/*Radius*/ 80, /*Height*/ 460),
     CALL_NATIVE(bhv_init_room),
     SET_INT(oIntangibleTimer, 0),
     BEGIN_LOOP(),
