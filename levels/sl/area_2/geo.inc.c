@@ -3,7 +3,7 @@
 const GeoLayout sl_area_2_geo[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 20437, -2000, -12262, sl_dl_Lighthouse_Inside_mesh_layer_1),
+		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 20437, -2000, -12263, sl_dl_Lighthouse_Inside_mesh_layer_1),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
