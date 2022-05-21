@@ -633,6 +633,7 @@
 #define MODEL_LIGHTHOUSE_BROKEN_GLASS     0x191
 #define MODEL_LIGHTHOUSE_BULB             0x192
 #define MODEL_LIGHTHOUSE_CHAIN            0x193
+#define MODEL_LIGHTHOUSE_CHAIN_INSIDE     0x194
 // end axo models
 
 //comit models

@@ -24,4 +24,6 @@ extern const LevelScript level_sl_entry[];
 
 #include "levels/sl/lighthouse_chain/geo_header.h"
 
+#include "levels/sl/lighthouse_chain_inside/geo_header.h"
+
 #endif

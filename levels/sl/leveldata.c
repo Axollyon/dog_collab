@@ -22,3 +22,4 @@
 #include "levels/sl/lighthouse_broken_glass/collision.inc.c"
 #include "levels/sl/lighthouse_bulb/model.inc.c"
 #include "levels/sl/lighthouse_chain/model.inc.c"
+#include "levels/sl/lighthouse_chain_inside/model.inc.c"
